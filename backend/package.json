@@ -1,0 +1,25 @@
+{
+  "name": "tcc-clinic-backend",
+  "version": "1.1.0",
+  "description": "Simple backend for the TCC Clinic student health system",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "reset-db": "node scripts/reset-db.js",
+    "demo-data": "node scripts/reset-db.js --demo",
+    "migrate-json": "node scripts/migrate-json-to-mysql.js",
+    "verify-mysql": "node scripts/verify-mysql.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mysql2": "^3.11.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "private": true
+}
